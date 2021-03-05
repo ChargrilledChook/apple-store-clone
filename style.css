@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  margin: 0;
+}
+
+*:before,
+*,
+*:after {
+  box-sizing: inherit;
+}
+
+/* General Layout */
+
+.site-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Hero / Main Banner */
+
+.hero-container {
+  height: 677px;
+  width: 1440px;
+  background-color: aquamarine;
+  background: url(https://web.archive.org/web/20140301004302im_/http://images.apple.com/v/home/as/images/your_verse_hero.jpg)
+    50% 100% no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 65px;
+}
+
+/* Main Nav */
+
+.main-nav > ul {
+  display: flex;
+  justify-content: space-between;
+  width: 845px;
+  height: 36px;
+  list-style: none;
+  /* border: 1px solid rgb(153, 147, 147); */
+  border-radius: 2px;
+}
+
+.main-nav > ul > li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(153, 147, 147);
+  border-left: 1px solid rgb(153, 147, 147);
+}
+
+.main-nav > ul > li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Products */
+
+.product-container {
+  width: 1440px;
+  height: 200px;
+  background-color: cornflowerblue;
+}
+
+/* Products */
+
+footer {
+  background-color: rgb(170, 76, 95);
+  width: 1440px;
+  height: 90px;
+}
