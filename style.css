@@ -116,7 +116,7 @@ input:focus {
 }
 
 .main-nav > ul > li:hover {
-  background-color: rgb(37, 33, 33);
+  background-color: rgb(126, 121, 121);
   transition: 1s;
 }
 
