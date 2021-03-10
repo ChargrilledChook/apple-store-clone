@@ -45,6 +45,15 @@ p {
 
 /* Main Nav */
 
+.apple-logo {
+  width: 22px;
+  height: 22px;
+}
+
+.main-nav {
+  margin-bottom: 80px;
+}
+
 .main-nav > ul {
   padding-left: 0;
   background-color: #707070;
@@ -64,12 +73,34 @@ p {
 
 .main-nav > ul > li {
   width: 100%;
+  font-size: 0.72rem;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid rgb(104, 101, 101);
   border-left: 1px solid rgb(104, 101, 101);
   border-radius: 4px;
+  transition: 1s;
+}
+
+input {
+  padding-left: 10px;
+  margin: 0 8px;
+  width: 100px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, .08);
+  transition: 0.4s;
+}
+
+
+input:focus {
+  outline: none;
+  transition: 0.4s;
+  background-color: white;
+  width: 200px;
+  overflow: visible;
 }
 
 .hero-container a {
@@ -84,9 +115,30 @@ p {
   text-decoration: none;
 }
 
-
 .main-nav > ul > li:hover {
   background-color: rgb(37, 33, 33);
+  transition: 1s;
+}
+
+.hero-container > * {
+  font-family: "Quicksand", sans-serif;
+  font-weight: normal;
+}
+
+.hero-container h1 {
+  font-size: 58px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.hero-container h2 {
+  font-size: 32px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.hero-container .hero-link {
+  font-size: 22px;
 }
 
 /* Products */
@@ -138,10 +190,9 @@ footer > * {
   margin-top: 18px;
 }
 
-footer  p {
+footer p {
   margin-bottom: 10px;
 }
-
 
 .footer-right {
   display: flex;
@@ -160,7 +211,6 @@ footer  p {
   padding-left: 5px;
 }
 
-
-.footer-right  img {
+.footer-right img {
   margin-top: -2px;
 }
