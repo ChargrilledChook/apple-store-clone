@@ -139,6 +139,7 @@ input:focus {
   font-size: 32px;
   margin-top: 0;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .hero-container .hero-link {
