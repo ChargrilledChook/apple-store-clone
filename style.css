@@ -1,5 +1,7 @@
 html {
   box-sizing: border-box;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+    sans-serif;
 }
 
 body {
@@ -21,6 +23,10 @@ body {
   flex-direction: column;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
 /* Hero / Main Banner */
 
 .hero-container {
@@ -33,6 +39,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 65px;
+  margin-bottom: 1px;
+  color: white;
 }
 
 /* Main Nav */
@@ -40,16 +48,19 @@ body {
 .main-nav > ul {
   padding-left: 0;
   background-color: #707070;
-  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.185) 50%, rgba(202, 202, 202, 0) 50%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.185) 50%,
+    rgba(202, 202, 202, 0) 50%
+  );
   display: flex;
   justify-content: space-between;
   width: 845px;
   height: 36px;
   list-style: none;
   /* border: 1px solid rgb(153, 147, 147); */
-  border-radius: 2px;
+  border-radius: 4px;
 }
-
 
 .main-nav > ul > li {
   width: 100%;
@@ -58,29 +69,98 @@ body {
   align-items: center;
   border: 1px solid rgb(104, 101, 101);
   border-left: 1px solid rgb(104, 101, 101);
+  border-radius: 4px;
 }
 
-.main-nav > ul > li a {
+.hero-container a {
   text-decoration: none;
   color: white;
 }
 
+.hero-container a:hover {
+  text-decoration: underline;
+}
+.main-nav a:hover {
+  text-decoration: none;
+}
+
+
 .main-nav > ul > li:hover {
-  background-color: rgb(37, 33, 33)
-  }
+  background-color: rgb(37, 33, 33);
+}
 
 /* Products */
 
 .product-container {
+  display: flex;
   width: 1440px;
   height: 200px;
-  background-color: cornflowerblue;
+  margin-bottom: 2px;
+}
+
+.product {
+  margin-right: 2px;
+}
+
+.product:last-child {
+  margin-right: 0;
+}
+
+.product > img {
+  width: 100%;
 }
 
 /* Products */
 
 footer {
-  background-color: rgb(170, 76, 95);
   width: 1440px;
   height: 90px;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  color: #6e6e6e;
+}
+
+footer span {
+  display: inline-block;
+}
+
+footer a {
+  text-decoration: none;
+  color: #0088cc;
+}
+
+.footer-left {
+  margin-right: 40px;
+}
+
+footer > * {
+  margin-top: 18px;
+}
+
+footer  p {
+  margin-bottom: 10px;
+}
+
+
+.footer-right {
+  display: flex;
+}
+
+.footer-right > * {
+  display: flex;
+
+  height: 12px;
+  padding-bottom: 15px;
+}
+
+.pipes {
+  border-left: 1px solid #ccc;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+
+.footer-right  img {
+  margin-top: -2px;
 }
