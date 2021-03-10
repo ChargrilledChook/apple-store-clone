@@ -85,12 +85,16 @@ p {
 }
 
 input {
-  padding-left: 10px;
+  padding-left: 25px;
   margin: 0 8px;
   width: 100px;
   border: none;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, .08);
+  background-image: url(images/search-icon.svg);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: 5%;
   transition: 0.4s;
 }
 
